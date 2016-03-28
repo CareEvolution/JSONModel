@@ -28,6 +28,10 @@
 		92C9BC8E1B19A5B600D79B06 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C9BC791B19A5B600D79B06 /* JSONKeyMapper.m */; };
 		92C9BC8F1B19A5B600D79B06 /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C9BC7A1B19A5B600D79B06 /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92C9BC901B19A5B600D79B06 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C9BC7B1B19A5B600D79B06 /* JSONValueTransformer.m */; };
+		D22968FE1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D22968FA1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22968FF1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D22968FB1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.m */; };
+		D22969001CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D22968FC1CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22969011CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D22968FD1CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		92C9BC791B19A5B600D79B06 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
 		92C9BC7A1B19A5B600D79B06 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		92C9BC7B1B19A5B600D79B06 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		D22968FA1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONKeyMapper+CEVAdditions.h"; sourceTree = "<group>"; };
+		D22968FB1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONKeyMapper+CEVAdditions.m"; sourceTree = "<group>"; };
+		D22968FC1CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CEVAdditions.h"; sourceTree = "<group>"; };
+		D22968FD1CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CEVAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				92C9BC6F1B19A5B600D79B06 /* JSONModelLib.h */,
+				D22968F91CA9D81E00626293 /* CEVAdditions */,
 				92C9BC631B19A5B600D79B06 /* JSONModel */,
 				92C9BC6C1B19A5B600D79B06 /* JSONModelCategories */,
 				92C9BC701B19A5B600D79B06 /* JSONModelNetworking */,
@@ -152,6 +161,17 @@
 			path = JSONModel/JSONModelTransformations;
 			sourceTree = "<group>";
 		};
+		D22968F91CA9D81E00626293 /* CEVAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				D22968FA1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.h */,
+				D22968FB1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.m */,
+				D22968FC1CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.h */,
+				D22968FD1CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.m */,
+			);
+			path = CEVAdditions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -165,9 +185,11 @@
 				92C9BC8F1B19A5B600D79B06 /* JSONValueTransformer.h in Headers */,
 				92C9BC841B19A5B600D79B06 /* NSArray+JSONModel.h in Headers */,
 				92C9BC801B19A5B600D79B06 /* JSONModelClassProperty.h in Headers */,
+				D22968FE1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.h in Headers */,
 				92C9BC871B19A5B600D79B06 /* JSONAPI.h in Headers */,
 				92C9BC7C1B19A5B600D79B06 /* JSONModel.h in Headers */,
 				92C9BC821B19A5B600D79B06 /* JSONModelError.h in Headers */,
+				D22969001CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.h in Headers */,
 				92C9BC891B19A5B600D79B06 /* JSONHTTPClient.h in Headers */,
 				92C9BC8D1B19A5B600D79B06 /* JSONKeyMapper.h in Headers */,
 			);
@@ -248,7 +270,9 @@
 				92C9BC881B19A5B600D79B06 /* JSONAPI.m in Sources */,
 				92C9BC7D1B19A5B600D79B06 /* JSONModel.m in Sources */,
 				92C9BC7F1B19A5B600D79B06 /* JSONModelArray.m in Sources */,
+				D22969011CA9D81E00626293 /* JSONValueTransformer+CEVAdditions.m in Sources */,
 				92C9BC811B19A5B600D79B06 /* JSONModelClassProperty.m in Sources */,
+				D22968FF1CA9D81E00626293 /* JSONKeyMapper+CEVAdditions.m in Sources */,
 				92C9BC8C1B19A5B600D79B06 /* JSONModel+networking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
