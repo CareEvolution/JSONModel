@@ -21,6 +21,7 @@
 #import "JSONValueTransformer+CEVAdditions.h"
 #import "JSONKeyMapper.h"
 #import "JSONKeyMapper+CEVAdditions.h"
+#import "JSONModelArray.h"
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 #if TARGET_IPHONE_SIMULATOR
